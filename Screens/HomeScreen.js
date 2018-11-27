@@ -1,10 +1,24 @@
 import React from 'react';
-import { Button, FlatList, TouchableOpacity, TouchableHighlight, View } from 'react-native';
+import { Button, FlatList, TouchableHighlight, View } from 'react-native';
 
 class HomeScreen extends React.Component {
 
-    render() {
+    renderItem = ({item}) => {
         const {navigate} = this.props.navigation;
+        return(
+            <View>
+                <TouchableHighlight>
+                    <Button
+                        title={item.key}
+                        onPress={() => navigate(item.key)}
+                    />
+                </TouchableHighlight>
+            </View>
+        )
+    }
+
+
+    render() {
         return (
             <View>
                 <FlatList
@@ -92,18 +106,8 @@ class HomeScreen extends React.Component {
                         {key:'TextStyleProps'},
                         {key:'ViewStyleProps'},
                     ]}
-                    renderItem={({item}) => {
-                        return(
-                            <View>
-                                <TouchableHighlight>
-                                    <Button
-                                        title={item.key}
-                                        onPress={() => navigate(item.key)}
-                                    />
-                                </TouchableHighlight>
-                            </View>
-                        )
-                    }}
+                    renderItem={this.renderItem}
+                    initialNumToRender={20}
                 />
             </View>
         )
