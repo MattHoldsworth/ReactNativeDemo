@@ -1,17 +1,11 @@
 import React from 'react';
-import { AsyncStorage, Button, View } from 'react-native';
+import { Alert, AsyncStorage, Button, View } from 'react-native';
 
 class AsyncStorageDemo extends React.Component {
-    constructor (props) {
-        super(props)
-        this.state = {
-
-        }
-    }
 
     storeData = async () => {
         try {
-            await AsyncStorage.setItem('@MySuperStore:key', 'I like to save it.');
+            await AsyncStorage.setItem('userName', 'John Doe');
         } catch (error) {
             console.log(error)
         }
@@ -19,9 +13,16 @@ class AsyncStorageDemo extends React.Component {
 
     retrieveData = async () => {
         try {
-            const value = await AsyncStorage.getItem('TASKS');
+            const value = await AsyncStorage.getItem('userName');
             if (value !== null) {
-                console.log(value);
+                Alert.alert(
+                    'Retrieved Data',
+                    value,
+                    [
+                        {text: 'OK', onPress: () => console.log('OK Pressed')},
+                    ],
+                    { cancelable: false }
+                )
             }
         } catch (error) {
             console.log(error)
