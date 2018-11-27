@@ -1,12 +1,16 @@
 import React from 'react';
-import { BackHandler, Button, View } from 'react-native';
+import { BackHandler, View, Text } from 'react-native';
 
 class BackHandlerDemo extends React.Component {
+
+    static navigationOptions =({navigation}) => {
+        return {
+            headerLeft: null,
+        }  
+    }
+
     constructor(props) {
         super(props)
-        this.state = {
-
-        }
         this.handleBackButtonPress = this.handleBackButtonPress.bind(this)
     }
 
@@ -19,14 +23,15 @@ class BackHandlerDemo extends React.Component {
     }
 
     handleBackButtonPress() {
-        this.props.navigation.goBack(null);
-        return true;
+        return this.props.navigation.goBack(null);
     }
 
     render() {
         return(
             <View>
-
+                <Text>
+                    Use the physical back button on your Android device.
+                </Text>
             </View>
         )
     }
