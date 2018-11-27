@@ -1,10 +1,15 @@
 import React from 'react';
-import { View, Text, AccessibilityInfo } from 'react-native';
+import { Alert, AccessibilityInfo, Button, View, } from 'react-native';
 
 class AccessibilityInfoDemo extends React.Component {
-    state = {
-      screenReaderEnabled: false,
-    };
+
+    constructor(props) {
+      super(props)
+      this.state = {
+        screenReaderEnabled: false,
+      }
+      this.screenReaderAlert = this.screenReaderAlert.bind(this)
+    }
   
     componentDidMount() {
       AccessibilityInfo.addEventListener(
@@ -30,16 +35,27 @@ class AccessibilityInfoDemo extends React.Component {
         screenReaderEnabled: isEnabled,
       });
     };
+
+    screenReaderAlert() {
+      return(
+        Alert.alert(
+          'Notice',
+          this.state.screenReaderEnabled ? 'The screen reader is enabled.' : 'The screen reader is disabled.',
+          [
+            {text: 'OK', onPress: () => console.log('OK Pressed')},
+          ],
+          { cancelable: false }
+        )
+      )
+    }
   
     render() {
       return (
         <View>
-          <Text>
-            {"\n"}
-            {"\n"}
-            The screen reader is{' '}
-            {this.state.screenReaderEnabled ? 'enabled' : 'disabled'}.
-          </Text>
+            <Button 
+            title="Check screenreader"
+            onPress={this.screenReaderAlert}
+            />
         </View>
       );
     }
