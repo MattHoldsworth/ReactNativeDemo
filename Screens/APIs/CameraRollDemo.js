@@ -59,7 +59,7 @@ class CameraRollDemo extends React.Component {
         return (
           <ScrollView>
             <View>
-              { this.state.images.map((image) => <Image source={{ height:200, width:200, uri: image.uri }} />) }
+              { this.state.images.map((image) => <Image key={image.uri} source={{ height:200, width:200, uri: image.uri }} />) }
             </View>          
           </ScrollView>
         );
