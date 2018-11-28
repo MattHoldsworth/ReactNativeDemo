@@ -64,7 +64,7 @@ class HomeScreen extends React.Component {
                         {key:'FlatListDemo'},
                         {key:'ImageBackgroundDemo'},
                         {key:'ImageDemo'},
-                        {key:'InputAccessoryViewDemo'},
+                        {key:'InputAccessoryViewIOSDemo'},
                         {key:'KeyboardAvoidingViewDemo'},
                         {key:'ListViewDemo'},
                         {key:'MaskedViewIOSDemo'},

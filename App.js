@@ -47,7 +47,7 @@ import DrawerLayoutAndroidDemo from './Screens/Components/DrawerLayoutAndroidDem
 import FlatListDemo from './Screens/Components/FlatListDemo'
 import ImageBackgroundDemo from './Screens/Components/ImageBackgroundDemo'
 import ImageDemo from './Screens/Components/ImageDemo'
-import InputAccessoryViewDemo from './Screens/Components/InputAccessoryViewDemo'
+import InputAccessoryViewIOSDemo from './Screens/Components/InputAccessoryViewIOSDemo'
 import KeyboardAvoidingViewDemo from './Screens/Components/KeyboardAvoidingViewDemo'
 import ListViewDemo from './Screens/Components/ListViewDemo'
 import MaskedViewIOSDemo from './Screens/Components/MaskedViewIOSDemo'
@@ -133,7 +133,7 @@ const MainNavigator = createStackNavigator({
   FlatListDemo,
   ImageBackgroundDemo,
   ImageDemo,
-  InputAccessoryViewDemo,
+  InputAccessoryViewIOSDemo,
   KeyboardAvoidingViewDemo,
   ListViewDemo,
   MaskedViewIOSDemo,
