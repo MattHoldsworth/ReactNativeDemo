@@ -27,7 +27,6 @@ import LayoutAnimationDemo from './Screens/APIs/LayoutAnimationDemo'
 import LinkingDemo from './Screens/APIs/LinkingDemo'
 import NetInfoDemo from './Screens/APIs/NetInfoDemo'
 import PanResponderDemo from './Screens/APIs/PanResponderDemo'
-import PermissionsAndroidDemo from './Screens/APIs/PermissionsAndroidDemo'
 import PixelRatioDemo from './Screens/APIs/PixelRatioDemo'
 import PushNotificationsIOSDemo from './Screens/APIs/PushNotificationsIOSDemo'
 import ShareDemo from './Screens/APIs/ShareDemo'
@@ -116,7 +115,6 @@ const MainNavigator = createStackNavigator({
   LinkingDemo,
   NetInfoDemo,
   PanResponderDemo,
-  PermissionsAndroidDemo,
   PixelRatioDemo,
   PushNotificationsIOSDemo,
   ShareDemo,

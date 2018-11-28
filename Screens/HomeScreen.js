@@ -47,7 +47,6 @@ class HomeScreen extends React.Component {
                         {key:'LinkingDemo'},
                         {key:'NetInfoDemo'},
                         {key:'PanResponderDemo'},
-                        {key:'PermissionsAndroidDemo'},
                         {key:'PixelRatioDemo'},
                         {key:'PushNotificationsIOSDemo'},
                         {key:'ShareDemo'},

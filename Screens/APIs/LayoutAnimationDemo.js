@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, LayoutAnimation } from 'react-native';
 
 class LayoutAnimationDemo extends React.Component {
     render() {

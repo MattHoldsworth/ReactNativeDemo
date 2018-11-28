@@ -23,6 +23,7 @@ class KeyboardDemo extends React.Component {
     render() {
         return (
             <TextInput
+                autoFocus={true}
                 onSubmitEditing={Keyboard.dismiss}
             />
         );

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Image, ScrollView, View, Text, CameraRoll, PermissionsAndroid } from 'react-native';
+import { Image, Button, ScrollView, View, Text, CameraRoll } from 'react-native';
+import Permissions from './Permissions';
 
 class CameraRollDemo extends React.Component {
     constructor(props) {
@@ -10,42 +11,53 @@ class CameraRollDemo extends React.Component {
       };
     }
 
-    componentWillMount() {
-        this.askPermission()
-    }
-
-    askPermission = () => {
-        PermissionsAndroid.request(
-            PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
-            {
-            'title': 'Cool Photo App Camera Permission',
-            'message': 'Cool Photo App needs access to your camera ' +
-                        'so you can take awesome pictures.'
-            }
-        ).then( granted => {
-            if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-                this.getPhotos()
-                console.log("You can use the camera")
+    checkCameraPermission = async () => {
+        try {
+            const alreadyGranted = await Permissions.check('camera');
+            if (alreadyGranted) {
+                return alreadyGranted
             } else {
-                console.log("Camera permission denied")
+                const justGranted = await Permissions.request('camera');
+                return justGranted 
             }
-        })
+        } catch (err) {
+            console.log(err)
+        }
+
     }
 
-    getPhotos = () => {
-        CameraRoll.getPhotos({first: 5}).then(
-            (data) =>{
-                const assets = data.edges;
-                const images = assets.map((asset) => asset.node.image);
-                this.setState({
-                    isCameraLoaded: true,
-                    images: images
-                })
-            },
-        (error) => {
-            console.warn(error);
+    checkPhotoPermission = async () => {
+        try {
+            const alreadyGranted = await Permissions.check('photos');
+            if (alreadyGranted) {
+                return alreadyGranted
+            } else {
+                const justGranted = await Permissions.request('photos');
+                return justGranted 
+            }
+        } catch (err) {
+            console.log(err)
         }
-      )
+
+    }
+
+    getPhotos = async () => {
+        if (await this.checkCameraPermission()) {
+            if (await this.checkPhotoPermission()) {
+                CameraRoll.getPhotos({first: 5}).then(
+                    (data) => {
+                        const assets = data.edges;
+                        const images = assets.map((asset) => asset.node.image);
+                        this.setState({
+                            isCameraLoaded: true,
+                            images: images
+                        })
+                    },
+                (error) => {
+                    console.warn(error);
+                })
+            }
+        }
     }
   
     render() {
@@ -53,17 +65,24 @@ class CameraRollDemo extends React.Component {
           return (
             <View>
               <Text>Loading ...</Text>
+              <View>
+                    <Button 
+                    title="Press to view camera roll"
+                    onPress={this.getPhotos}
+                    />
+                </View>
             </View>
             );
         }
         return (
           <ScrollView>
-            <View>
-              { this.state.images.map((image) => <Image key={image.uri} source={{ height:200, width:200, uri: image.uri }} />) }
-            </View>          
+                <View>
+                { this.state.images.map((image) => <Image key={image.uri} source={{ height:200, width:200, uri: image.uri }} />) }
+                </View>          
           </ScrollView>
         );
     }
+
   };
   
   export default CameraRollDemo;
