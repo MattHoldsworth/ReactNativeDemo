@@ -17,7 +17,6 @@ class HomeScreen extends React.Component {
         )
     }
 
-
     render() {
         return (
             <View>
@@ -111,6 +110,6 @@ class HomeScreen extends React.Component {
             </View>
         )
     }
-    
+
 }
 export default HomeScreen

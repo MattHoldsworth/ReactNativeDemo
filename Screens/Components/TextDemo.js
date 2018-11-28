@@ -5,7 +5,9 @@ class TextDemo extends React.Component {
     render() {
         return (
             <View>
-
+                <Text>
+                    This is a text component.
+                </Text>
             </View>
         )
     }

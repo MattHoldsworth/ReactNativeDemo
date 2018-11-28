@@ -1,11 +1,13 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 
 class ViewDemo extends React.Component {
     render() {
         return (
             <View>
-
+                <Text>
+                    This text is contained in a 'View'
+                </Text>
             </View>
         )
     }

@@ -4,9 +4,13 @@ import { Text, TouchableHighlight, View } from 'react-native';
 class TouchableHighlightDemo extends React.Component {
     render() {
         return (
-            <View>
-
-            </View>
+            <TouchableHighlight>
+                <View>
+                    <Text>
+                        This text is contained within a touchable highlight component.
+                    </Text>
+                </View>
+            </TouchableHighlight>
         )
     }
 
