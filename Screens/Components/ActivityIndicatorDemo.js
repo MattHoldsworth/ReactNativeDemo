@@ -1,14 +1,29 @@
 import React from 'react';
-import { ActivityIndicator, Text, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 
 class ActivityIndicatorDemo extends React.Component {
     render() {
         return (
-            <View>
-
+            <View style={[styles.container, styles.horizontal]}>
+                <ActivityIndicator size="large" color="#0000ff" />
+                <ActivityIndicator size="small" color="#00ff00" />
+                <ActivityIndicator size="large" color="#0000ff" />
+                <ActivityIndicator size="small" color="#00ff00" />
             </View>
         )
     }
-
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center'
+    },
+    horizontal: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        padding: 10
+    }
+})
+
 export default ActivityIndicatorDemo
