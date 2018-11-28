@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, Image, InteractionManager, Text, View, Image } from 'react-native';
+import { FlatList, Image, InteractionManager, Text, View } from 'react-native';
 
 class InteractionManagerDemo extends React.Component {
     constructor(props, context) {
