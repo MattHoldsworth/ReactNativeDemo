@@ -1,5 +1,5 @@
 import React from 'react';
-import { TimePickerAndroid, Button, Text, View } from 'react-native';
+import { Button, Text, TimePickerAndroid, View } from 'react-native';
 
 class TimePickerAndroidDemo extends React.Component {
     constructor(props) {
@@ -19,7 +19,7 @@ class TimePickerAndroidDemo extends React.Component {
                 is24Hour: false, // Will display '2 PM'
             });
             if (action !== TimePickerAndroid.dismissedAction) {
-              this.setState({hour:hour, minute:minute})
+                this.setState({hour:hour, minute:minute})
             }
         } catch ({code, message}) {
             console.warn('Cannot open time picker', message);
@@ -33,13 +33,12 @@ class TimePickerAndroidDemo extends React.Component {
                     The time selected is {this.state.hour}:{this.state.minute}
                 </Text>
                 <Button
-                title="Press me for the time"
-                onPress={this.openTimePicker}
+                    title="Press me for the time"
+                    onPress={this.openTimePicker}
                 />
             </View>
         )
     }
 
 }
-
 export default TimePickerAndroidDemo

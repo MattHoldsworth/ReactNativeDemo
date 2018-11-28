@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 class TextDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class TextDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default TextDemo

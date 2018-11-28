@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 
 class ViewStyleProps extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class ViewStyleProps extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default ViewStyleProps

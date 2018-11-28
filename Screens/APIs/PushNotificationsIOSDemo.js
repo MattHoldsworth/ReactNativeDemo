@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { PushNotificationsIOS, Text, View } from 'react-native';
 
 class PushNotificationsIOSDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class PushNotificationsIOSDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default PushNotificationsIOSDemo

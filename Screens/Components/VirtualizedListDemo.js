@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, View, VirtualizedList } from 'react-native';
 
 class VirtualizedListDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class VirtualizedListDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default VirtualizedListDemo

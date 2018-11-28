@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { AlertIOS, Text, View} from 'react-native';
 
 class AlertIOSDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class AlertIOSDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default AlertIOSDemo

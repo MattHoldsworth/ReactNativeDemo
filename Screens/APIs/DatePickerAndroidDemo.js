@@ -1,5 +1,5 @@
 import React from 'react';
-import { DatePickerAndroid, View, Text, Button } from 'react-native';
+import {  Button, DatePickerAndroid, Text, View} from 'react-native';
 
 class DatePickerAndroidDemo extends React.Component {
 
@@ -42,13 +42,12 @@ class DatePickerAndroidDemo extends React.Component {
                     {"The date is: " + this.state.day + "/" + this.state.month + "/" + this.state.year}
                 </Text>
                 <Button
-                title="Select a date"
-                onPress={this.openDatePicker}
+                    title="Select a date"
+                    onPress={this.openDatePicker}
                 />
             </View>
         )
     }
 
 }
-
 export default DatePickerAndroidDemo

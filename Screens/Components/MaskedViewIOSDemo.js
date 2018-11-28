@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { MaskedViewIOS, Text, View } from 'react-native';
 
 class MaskedViewIOSDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class MaskedViewIOSDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default MaskedViewIOSDemo

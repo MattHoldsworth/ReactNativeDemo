@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, VibrationIOS, View } from 'react-native';
 
 class VibrationIOSDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class VibrationIOSDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default VibrationIOSDemo

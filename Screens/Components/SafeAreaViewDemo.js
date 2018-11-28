@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { SafeAreaView, Text, View } from 'react-native';
 
 class SafeAreaViewDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class SafeAreaViewDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default SafeAreaViewDemo

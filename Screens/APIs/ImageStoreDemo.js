@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ImageStore } from 'react-native';
+import { ImageStore, Text, View } from 'react-native';
 
 class ImageStoreDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class ImageStoreDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default ImageStoreDemo

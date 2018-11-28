@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Systrace, Text, View } from 'react-native';
 
 class SystraceDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class SystraceDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default SystraceDemo

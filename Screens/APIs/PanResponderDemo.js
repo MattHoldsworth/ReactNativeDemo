@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, PanResponder } from 'react-native';
+import { PanResponder, Text, View } from 'react-native';
 
 class PanResponderDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class PanResponderDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default PanResponderDemo

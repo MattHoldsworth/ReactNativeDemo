@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { ImageBackground, Text, View} from 'react-native';
 
 class ImageBackgroundDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class ImageBackgroundDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default ImageBackgroundDemo

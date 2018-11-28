@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { TabBarIOSItem, Text, View } from 'react-native';
 
 class TabBarIOSItemDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class TabBarIOSItemDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default TabBarIOSItemDemo

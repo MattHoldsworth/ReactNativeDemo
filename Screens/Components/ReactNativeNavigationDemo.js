@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 class ReactNativeNavigationDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class ReactNativeNavigationDemo extends React.Component {
             </View>
         )
     }
-}
 
+}
 export default ReactNativeNavigationDemo

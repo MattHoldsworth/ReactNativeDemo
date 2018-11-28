@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 
 class TouchableOpacityDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class TouchableOpacityDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default TouchableOpacityDemo

@@ -11,41 +11,41 @@ class ReactNativeFoldviewDemo extends React.Component{
     }
     componentWillMount() {
         this.flip = this.flip.bind(this);
-      }
+    }
     
-      flip() {
+    flip() {
         this.setState({
-          expanded: !this.state.expanded,
+            expanded: !this.state.expanded,
         });
-      }
+    }
     
-      renderFrontface() {
+    renderFrontface() {
         return (
-          <Frontface />
+            <Frontface />
         );
-      }
+    }
     
-      renderBackface() {
+    renderBackface() {
         /**
          * You can nest <FoldView>s here to achieve the folding effect shown in the GIF above.
          * A reference implementation can be found in examples/Simple.
          */
         return (
-          <Backface />
+            <Backface />
         );
-      }
+    }
     
-      render() {
+    render() {
         return (
-          <FoldView
-            expanded={this.state.expanded}
-            renderBackface={this.renderBackface}
-            renderFrontface={this.renderFrontface}
-          >
-            <Base />
-          </FoldView>
+            <FoldView
+                expanded={this.state.expanded}
+                renderBackface={this.renderBackface}
+                renderFrontface={this.renderFrontface}
+            >
+                <Base />
+            </FoldView>
         );
-      }
+    }
+    
 }
-
 export default ReactNativeFoldviewDemo

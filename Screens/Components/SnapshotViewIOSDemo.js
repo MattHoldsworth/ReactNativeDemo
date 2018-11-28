@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { SnapshotViewIOS, Text, View } from 'react-native';
 
 class SnapshotViewIOSDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class SnapshotViewIOSDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default SnapshotViewIOSDemo

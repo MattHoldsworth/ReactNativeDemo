@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { SectionList, Text, View } from 'react-native';
 
 class SectionListDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class SectionListDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default SectionListDemo

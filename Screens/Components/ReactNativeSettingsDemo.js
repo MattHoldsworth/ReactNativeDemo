@@ -41,28 +41,28 @@ class ReactNativeSettingsDemo extends React.Component {
         return(
             <View>
                 <Button 
-                title="Check location setting"
-                onPress={this.checkLocationSetting}
+                    title="Check location setting"
+                    onPress={this.checkLocationSetting}
                 />
                 <Text>
-                {"\n"}
-                {"\n"}
-                Location is{' '}
-                {this.state.locationSetting ? 'enabled' : 'disabled'}.
+`                   {"\n"}
+                    {"\n"}
+                    Location is{' '}
+                    {this.state.locationSetting ? 'enabled' : 'disabled'}.`
                 </Text>
                 <Button 
-                title="Check location setting"
-                onPress={this.checkAirplaneModeSetting}
+                    title="Check location setting"
+                    onPress={this.checkAirplaneModeSetting}
                 />
                 <Text>
-                {"\n"}
-                {"\n"}
-                Airplane mode is{' '}
-                {this.state.airplaneModeSetting ? 'enabled' : 'disabled'}.
+                    {"\n"}
+                    {"\n"}
+                    Airplane mode is{' '}
+                    {this.state.airplaneModeSetting ? 'enabled' : 'disabled'}.
                 </Text>
             </View>
         )
     }
-}
 
+}
 export default ReactNativeSettingsDemo

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BackHandler, View, Text } from 'react-native';
+import { BackHandler,  Text, View} from 'react-native';
 
 class BackHandlerDemo extends React.Component {
 
@@ -35,6 +35,6 @@ class BackHandlerDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default BackHandlerDemo

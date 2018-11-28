@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button, Text, ImageEditor } from 'react-native';
+import { Button, ImageEditor, Text, View } from 'react-native';
 
 class ImageEditorDemo extends React.Component {
 
@@ -10,14 +10,13 @@ class ImageEditorDemo extends React.Component {
         return (
             <View>
                 <Button 
-                title="Crop Image"
-                onPress={this.getCroppedImage}
-                
+                    title="Crop Image"
+                    onPress={this.getCroppedImage}
                 />
 
             </View>
         )
     }
-}
 
+}
 export default ImageEditorDemo

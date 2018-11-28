@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { InputAccessory, Text, View } from 'react-native';
 
 class InputAccessoryViewDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class InputAccessoryViewDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default InputAccessoryViewDemo

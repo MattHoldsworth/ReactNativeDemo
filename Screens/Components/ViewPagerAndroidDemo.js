@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, View, ViewPagerAndroid } from 'react-native';
 
 class ViewPagerAndroidDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class ViewPagerAndroidDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default ViewPagerAndroidDemo

@@ -1,11 +1,10 @@
 import React from 'react';
-import { View, Alert, NetInfo } from 'react-native';
+import { Alert, NetInfo, View } from 'react-native';
 
 class NetInfoDemo extends React.Component {
 
     componentDidMount() {
         NetInfo.isConnected.addEventListener('connectionChange', this.handleConnectionChange);
-    
         NetInfo.isConnected.fetch().done(
           (isConnected) => { this.setState({ status: isConnected }); }
         );
@@ -16,10 +15,9 @@ class NetInfoDemo extends React.Component {
     }
     
     handleConnectionChange = (isConnected) => {
-            this.setState({ status: isConnected });
-            Alert.alert(message=`is connected: ${this.state.status}`);
+        this.setState({ status: isConnected });
+        Alert.alert(message=`is connected: ${this.state.status}`);
     }
-
 
     render() {
         return(
@@ -28,6 +26,6 @@ class NetInfoDemo extends React.Component {
             </View>
         )
     }
-}
 
+}
 export default NetInfoDemo

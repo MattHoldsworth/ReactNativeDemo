@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Switch, Text, View } from 'react-native';
 
 class SwitchDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class SwitchDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default SwitchDemo

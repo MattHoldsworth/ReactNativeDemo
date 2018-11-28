@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { AppRegistry, Text, View} from 'react-native';
 
 class AppRegistryDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class AppRegistryDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default AppRegistryDemo

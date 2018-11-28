@@ -1,14 +1,14 @@
 import React from 'react';
-import { Image, Button, ScrollView, View, Text, CameraRoll } from 'react-native';
+import { Button, CameraRoll, Image, ScrollView, Text, View } from 'react-native';
 import Permissions from './Permissions';
 
 class CameraRollDemo extends React.Component {
     constructor(props) {
-      super(props);
-      this.state = {
-       images: [],
-       isCameraLoaded: false
-      };
+        super(props);
+        this.state = {
+            images: [],
+            isCameraLoaded: false
+        };
     }
 
     checkCameraPermission = async () => {
@@ -23,7 +23,6 @@ class CameraRollDemo extends React.Component {
         } catch (err) {
             console.log(err)
         }
-
     }
 
     checkPhotoPermission = async () => {
@@ -38,7 +37,6 @@ class CameraRollDemo extends React.Component {
         } catch (err) {
             console.log(err)
         }
-
     }
 
     getPhotos = async () => {
@@ -62,27 +60,26 @@ class CameraRollDemo extends React.Component {
   
     render() {
         if (!this.state.isCameraLoaded) {
-          return (
-            <View>
-              <Text>Loading ...</Text>
-              <View>
+            return (
+                <View>
+                    <Text>Loading ...</Text>
+                    <View>
                     <Button 
-                    title="Press to view camera roll"
-                    onPress={this.getPhotos}
-                    />
+                        title="Press to view camera roll"
+                        onPress={this.getPhotos}
+                        />
+                    </View>
                 </View>
-            </View>
             );
         }
         return (
           <ScrollView>
                 <View>
-                { this.state.images.map((image) => <Image key={image.uri} source={{ height:200, width:200, uri: image.uri }} />) }
+                    { this.state.images.map((image) => <Image key={image.uri} source={{ height:200, width:200, uri: image.uri }} />) }
                 </View>          
           </ScrollView>
         );
     }
 
   };
-  
   export default CameraRollDemo;

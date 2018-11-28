@@ -1,5 +1,5 @@
 import React from 'react';
-import { Vibration, Button, Text, View } from 'react-native';
+import { Button, Vibration, View } from 'react-native';
 
 const DURATION = 10000
 const PATTERN = [1000, 2000, 3000]
@@ -7,9 +7,6 @@ const PATTERN = [1000, 2000, 3000]
 class VibrationDemo extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-
-        }
     }
 
     vibrate() {
@@ -40,24 +37,24 @@ class VibrationDemo extends React.Component {
         return(
             <View>
                 <Button 
-                title="Vibrate"
-                onPress={this.vibrate}
+                    title="Vibrate"
+                    onPress={this.vibrate}
                 />
                 <Button 
-                title="Pattern Vibrate"
-                onPress={this.patternVibrate}
+                    title="Pattern Vibrate"
+                    onPress={this.patternVibrate}
                 />
                 <Button 
-                title="Continuous Vibrate"
-                onPress={this.continuousVibrate}
+                    title="Continuous Vibrate"
+                    onPress={this.continuousVibrate}
                 />
                 <Button 
-                title="Cancel Vibrate"
-                onPress={this.cancelVibrate}
+                    title="Cancel Vibrate"
+                    onPress={this.cancelVibrate}
                 />
             </View>
         )
     }
-}
 
+}
 export default VibrationDemo

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Modal, Text, View } from 'react-native';
 
 class ModalDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class ModalDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default ModalDemo

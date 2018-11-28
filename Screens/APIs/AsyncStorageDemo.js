@@ -45,5 +45,4 @@ class AsyncStorageDemo extends React.Component {
     }
 
 }
-
 export default AsyncStorageDemo

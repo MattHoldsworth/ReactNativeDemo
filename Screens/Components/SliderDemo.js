@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Slider, Text, View } from 'react-native';
 
 class SliderDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class SliderDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default SliderDemo

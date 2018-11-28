@@ -37,6 +37,6 @@ class Permissions {
                 return Promise.resolve(false)
         }
     }
+    
 }
-
 export default new Permissions()

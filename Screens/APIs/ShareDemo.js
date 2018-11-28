@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, View, Share } from 'react-native';
+import { Button, Share, View } from 'react-native';
 
 class ShareDemo extends React.Component {
     constructor(props) {
@@ -22,5 +22,4 @@ class ShareDemo extends React.Component {
     }
 
 }
-
 export default ShareDemo

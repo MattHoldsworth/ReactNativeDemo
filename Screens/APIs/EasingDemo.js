@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, View, Text, Easing, ScrollView, Animated, TouchableHighlight } from 'react-native'
+import { Animated, Easing, ScrollView, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
 
 class EasingDemo extends React.Component {
 
-    constructor () {
+    constructor() {
         super()
         this.animatedValue = new Animated.Value(0)
     }

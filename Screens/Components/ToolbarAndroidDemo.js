@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, ToolbarAndroid, View } from 'react-native';
 
 class ToolbarAndroidDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class ToolbarAndroidDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default ToolbarAndroidDemo

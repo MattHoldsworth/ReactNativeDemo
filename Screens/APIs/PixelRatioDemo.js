@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { PixelRatio, StyleSheet, Text, View } from 'react-native';
 
 class PixelRatioDemo extends React.Component {
     constructor(props){
@@ -15,5 +15,4 @@ class PixelRatioDemo extends React.Component {
     }
 
 }
-
 export default PixelRatioDemo

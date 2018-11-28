@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Stylesheet, Text, View } from 'react-native';
 
 class StylesheetDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class StylesheetDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default StylesheetDemo

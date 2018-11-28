@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, PermissionsAndroid } from 'react-native'
+import { PermissionsAndroid, Text, View } from 'react-native'
 
 class GeolocationDemo extends React.Component {
     constructor(props) {
@@ -20,8 +20,8 @@ class GeolocationDemo extends React.Component {
         PermissionsAndroid.request(
             PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
             {
-            'title': 'Location Permission',
-            'message': 'This app needs access to your location'
+                'title': 'Location Permission',
+                'message': 'This app needs access to your location'
             }
         ).then( granted => {
             if (granted === PermissionsAndroid.RESULTS.GRANTED) {
@@ -36,9 +36,9 @@ class GeolocationDemo extends React.Component {
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 this.setState({
-                latitude: position.coords.latitude,
-                longitude: position.coords.longitude,
-                error: null,
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude,
+                    error: null,
                 });
             },
             (error) => this.setState({ error: error.message }),
@@ -59,6 +59,6 @@ class GeolocationDemo extends React.Component {
             </View>
         );
     }
-}
 
+}
 export default GeolocationDemo

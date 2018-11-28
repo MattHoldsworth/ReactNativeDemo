@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { ActionSheetIOS, Text, View } from 'react-native';
 
 class ActionSheetIOSDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class ActionSheetIOSDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default ActionSheetIOSDemo

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { KeyboardAvoidingView, Text, View } from 'react-native';
 
 class KeyboardAvoidingViewDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class KeyboardAvoidingViewDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default KeyboardAvoidingViewDemo

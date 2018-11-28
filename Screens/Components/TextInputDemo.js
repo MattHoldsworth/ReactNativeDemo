@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { TextInput, Text, View } from 'react-native';
 
 class TextInputDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class TextInputDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default TextInputDemo

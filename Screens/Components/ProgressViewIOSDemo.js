@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { ProgressViewIOS, Text, View } from 'react-native';
 
 class ProgressViewIOSDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class ProgressViewIOSDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default ProgressViewIOSDemo

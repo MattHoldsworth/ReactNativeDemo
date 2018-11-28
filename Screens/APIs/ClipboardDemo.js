@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, TextInput, Clipboard } from 'react-native';
+import { Button, Clipboard, StyleSheet, Text, TextInput, View } from 'react-native';
 
 class ClipboardDemo extends React.Component {
     constructor(props) {
@@ -26,19 +26,19 @@ class ClipboardDemo extends React.Component {
                 <Text style={styles.boldText}>Clipboard Contents: </Text>
                 <Text>{this.state.clipboardContent}</Text>
                 <Button
-                onPress={this.readFromClipboard}
-                title="Read from Clipboard"
+                    onPress={this.readFromClipboard}
+                    title="Read from Clipboard"
                 />
             <View style={styles.seperator} />
                 <TextInput
-                style={styles.textInput}
-                onChangeText={(text) => this.setState({text})}
-                value={this.state.text}
-                placeholder="Type here..."
+                    style={styles.textInput}
+                    onChangeText={(text) => this.setState({text})}
+                    value={this.state.text}
+                    placeholder="Type here..."
                 />
                 <Button
-                onPress={this.writeToClipboard}
-                title="Write to Clipboard"
+                    onPress={this.writeToClipboard}
+                    title="Write to Clipboard"
                 />
             </View>
         );

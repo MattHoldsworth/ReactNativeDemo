@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { ImagePickerIOS, Text, View } from 'react-native';
 
 class ImagePickerIOSDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class ImagePickerIOSDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default ImagePickerIOSDemo

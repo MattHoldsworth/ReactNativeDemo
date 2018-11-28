@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import {Button, Text, View} from 'react-native';
 
 class ButtonDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class ButtonDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default ButtonDemo

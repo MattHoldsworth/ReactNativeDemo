@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button, Dimensions } from 'react-native'
+import { Button, Dimensions, Text, View } from 'react-native'
 
 class DimensionsDemo extends React.Component {
     constructor(props) {
@@ -20,8 +20,8 @@ class DimensionsDemo extends React.Component {
         return (
             <View>
                 <Button
-                title="Get window dimensions"
-                onPress={this.getDimensions}
+                    title="Get window dimensions"
+                    onPress={this.getDimensions}
                 />
                 <Text>
                     {"The window width is: "}{this.state.width}{"\n"}{"The window height is: "}{this.state.height}
@@ -29,6 +29,6 @@ class DimensionsDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default DimensionsDemo

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { StatusBarIOS, Text, View } from 'react-native';
 
 class StatusBarIOSDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class StatusBarIOSDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default StatusBarIOSDemo

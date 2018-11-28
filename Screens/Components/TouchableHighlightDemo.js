@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, TouchableHighlight, View } from 'react-native';
 
 class TouchableHighlightDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class TouchableHighlightDemo extends React.Component {
             </View>
         )
     }
-}
 
+}
 export default TouchableHighlightDemo

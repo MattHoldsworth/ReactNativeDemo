@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image, InteractionManager, FlatList } from 'react-native';
+import { FlatList, Image, InteractionManager, Text, View, Image } from 'react-native';
 
 class InteractionManagerDemo extends React.Component {
     constructor(props, context) {
@@ -15,7 +15,7 @@ class InteractionManagerDemo extends React.Component {
     
     render() {
         if (this.state.renderPlaceholderOnly) {
-            return this._renderPlaceholderView();
+            return this.renderPlaceholderView();
         }
         return (
             <View>
@@ -23,8 +23,8 @@ class InteractionManagerDemo extends React.Component {
                     data={[{key: 'a'}, {key: 'b'}]}
                     renderItem={({item}) => 
                         <Image
-                        style={{width: 50, height: 50}}
-                        source={{uri: 'http://31.media.tumblr.com/tumblr_m8ic009VjR1qi7ul8o1_500.gif'}}
+                            style={{width: 50, height: 50}}
+                            source={{uri: 'http://31.media.tumblr.com/tumblr_m8ic009VjR1qi7ul8o1_500.gif'}}
                         />
                     }
                 />
@@ -32,8 +32,7 @@ class InteractionManagerDemo extends React.Component {
         );
     }
     
-    
-    _renderPlaceholderView() {
+    renderPlaceholderView() {
         return (
             <View>
                 <Text>
@@ -42,6 +41,6 @@ class InteractionManagerDemo extends React.Component {
             </View>
         );
     }
-};
 
+}
 export default InteractionManagerDemo

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { SegmentedControlIOS, Text, View} from 'react-native';
 
 class SegmentedControlIOSDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class SegmentedControlIOSDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default SegmentedControlIOSDemo

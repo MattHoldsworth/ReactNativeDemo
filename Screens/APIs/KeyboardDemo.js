@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextInput, Keyboard } from 'react-native';
+import { Keyboard, TextInput } from 'react-native';
 
 class KeyboardDemo extends React.Component {
     componentDidMount () {
@@ -28,6 +28,6 @@ class KeyboardDemo extends React.Component {
             />
         );
     }
+    
 }
-
 export default KeyboardDemo

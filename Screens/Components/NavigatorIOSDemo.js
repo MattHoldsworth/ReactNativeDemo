@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { NavigatorIOS, Text, View } from 'react-native';
 
 class NavigatorIOSDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class NavigatorIOSDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default NavigatorIOSDemo

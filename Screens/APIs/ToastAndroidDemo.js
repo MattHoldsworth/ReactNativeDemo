@@ -1,5 +1,5 @@
 import React from 'react';
-import { ToastAndroid, Button, View } from 'react-native';
+import { Button, ToastAndroid, View } from 'react-native';
 
 class ToastAndroidDemo extends React.Component {
     constructor(props) {
@@ -8,7 +8,6 @@ class ToastAndroidDemo extends React.Component {
 
     showToast(){
         ToastAndroid.show('A pikachu appeared nearby!', ToastAndroid.SHORT)
-
     }
 
     showWithGravityToast() {
@@ -26,29 +25,27 @@ class ToastAndroidDemo extends React.Component {
             ToastAndroid.BOTTOM,
             25,
             50,
-            );
+        );
     }
 
     render() {
         return(
             <View>
                 <Button
-                title="Press for toast"
-                onPress={this.showToast}
+                    title="Press for toast"
+                    onPress={this.showToast}
                 />
                 <Button
-                title="Press for gravity toast"
-                onPress={this.showWithGravityToast}
+                    title="Press for gravity toast"
+                    onPress={this.showWithGravityToast}
                 />
                 <Button
-                title="Press for offset toast"
-                onPress={this.showWithGravityAndOffsetToast}
+                    title="Press for offset toast"
+                    onPress={this.showWithGravityAndOffsetToast}
                 />
-
             </View>
         )
-
     }
-}
 
+}
 export default ToastAndroidDemo

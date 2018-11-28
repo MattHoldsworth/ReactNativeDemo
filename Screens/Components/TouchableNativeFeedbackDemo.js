@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, TouchableNativeFeedback, View } from 'react-native';
 
 class TouchableNativeFeedbackDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class TouchableNativeFeedbackDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default TouchableNativeFeedbackDemo

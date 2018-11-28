@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Linking } from 'react-native';
+import { Linking , Text, View } from 'react-native';
 
 class LinkingDemo extends React.Component {
     render() {
@@ -9,6 +9,6 @@ class LinkingDemo extends React.Component {
             </View>
         )
     }
+    
 }
-
 export default LinkingDemo
