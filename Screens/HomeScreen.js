@@ -26,7 +26,7 @@ class HomeScreen extends React.Component {
                         {key:'ActionSheetIOSDemo'},
                         {key:'AlertDemo'},
                         {key:'AlertIOSDemo'},
-                        {key:'AnimatedDemo'},
+                        {key:'AnimatedDemoExample'},
                         {key:'AppRegistryDemo'},
                         {key:'AppStateDemo'},
                         {key:'AsyncStorageDemo'},

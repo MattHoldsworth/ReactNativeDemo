@@ -7,7 +7,7 @@ import AccessibilityInfoDemo from './Screens/APIs/AccessibilityInfoDemo'
 import ActionSheetIOSDemo from './Screens/APIs/ActionSheetIOSDemo'
 import AlertDemo from './Screens/APIs/AlertDemo'
 import AlertIOSDemo from './Screens/APIs/AlertIOSDemo'
-import AnimatedDemo from './Screens/APIs/AnimatedDemo' //export default app to render
+import AnimatedDemoExample from './Screens/APIs/AnimatedDemoExample'
 import AppRegistryDemo from './Screens/APIs/AppRegistryDemo' //Used for ejected apps - not implemented
 import AppStateDemo from './Screens/APIs/AppStateDemo'
 import AsyncStorageDemo from './Screens/APIs/AsyncStorageDemo'
@@ -95,7 +95,7 @@ const MainNavigator = createStackNavigator({
   ActionSheetIOSDemo,
   AlertDemo,
   AlertIOSDemo,
-  AnimatedDemo,
+  AnimatedDemoExample,
   AppRegistryDemo,
   AppStateDemo,
   AsyncStorageDemo,
@@ -177,19 +177,3 @@ const MainNavigator = createStackNavigator({
 const App = createAppContainer(MainNavigator)
 
 export default App
-
-
-    /*<View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <AnimatedDemo style={{width: 250, height: 50, backgroundColor: 'powderblue'}}>
-        <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>Fading in</Text>
-      </AnimatedDemo>
-    </View>*/
-
-/*const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});*/
