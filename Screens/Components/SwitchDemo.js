@@ -1,28 +1,16 @@
 import React from 'react';
 import { StyleSheet, Switch, View } from 'react-native';
 
-class SwitchDemo extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-           switch1Value: false,
-        }
-     }
-
-    render() {
+export default SwitchDemo = (props) => {
         return (
             <View style = {styles.container}>
                 <Switch
                     onValueChange = {props.toggleSwitch1}
-                    value = {props.switch1Value}/>
-                
+                    value = {props.switch1Value}
                 />
-
             </View>
         )
     }
-    
-}
 
 const styles = StyleSheet.create ({
     container: {
@@ -31,5 +19,3 @@ const styles = StyleSheet.create ({
        marginTop: 100
     }
 })
-
-export default SwitchDemo

@@ -86,7 +86,7 @@ class HomeScreen extends React.Component {
                         {key:'SliderDemo'},
                         {key:'SnapshotViewIOSDemo'},
                         {key:'StatusBarDemo'},
-                        {key:'SwitchDemo'},
+                        {key:'SwitchDemoExample'},
                         {key:'TabBarIOSDemo'},
                         {key:'TabBarIOSItemDemo'},
                         {key:'TextDemo'},

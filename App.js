@@ -69,7 +69,7 @@ import SegmentedControlIOSDemo from './Screens/Components/SegmentedControlIOSDem
 import SliderDemo from './Screens/Components/SliderDemo'
 import SnapshotViewIOSDemo from './Screens/Components/SnapshotViewIOSDemo'
 import StatusBarDemo from './Screens/Components/StatusBarDemo'
-import SwitchDemo from './Screens/Components/SwitchDemo'
+import SwitchDemoExample from './Screens/Components/SwitchDemoExample'
 import TabBarIOSDemo from './Screens/Components/TabBarIOSDemo'
 import TabBarIOSItemDemo from './Screens/Components/TabBarIOSItemDemo'
 import TextDemo from './Screens/Components/TextDemo'
@@ -155,7 +155,7 @@ const MainNavigator = createStackNavigator({
   SliderDemo,
   SnapshotViewIOSDemo,
   StatusBarDemo,
-  SwitchDemo,
+  SwitchDemoExample,
   TabBarIOSDemo,
   TabBarIOSItemDemo,
   TextDemo,
