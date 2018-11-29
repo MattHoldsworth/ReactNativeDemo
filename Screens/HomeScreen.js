@@ -79,7 +79,7 @@ class HomeScreen extends React.Component {
                         {key:'ReactNativeSettingsDemo'},
                         {key:'ReactNativeWebviewDemo'},
                         {key:'RefreshControlDemo'},
-                        {key:'SafeAreaViewDemo'},
+                        {key:'SafeAreaViewIOSDemo'},
                         {key:'ScrollViewDemo'},
                         {key:'SectionListDemo'},
                         {key:'SegmentedControlIOSDemo'},

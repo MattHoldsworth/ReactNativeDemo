@@ -11,8 +11,6 @@ const KeyboardAvoidingViewDemo = () => {
             <View style={{ justifyContent: 'center', alignItems: 'center', flex: 1}} >
                 <Image source={logo} style={styles.logo} />
             </View>
-            
-            
             <TextInput
                 placeholder="Email"
                 style={styles.input}
@@ -33,6 +31,7 @@ const KeyboardAvoidingViewDemo = () => {
         </KeyboardAvoidingView>
     )
 }
+
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -48,15 +47,11 @@ const styles = StyleSheet.create({
       borderWidth: 1,
       fontSize: 16,
     },
- 
     logo: {
-        
         flex: 1,
         height: 200,
         width: 250,
-       
     }
-
   });
 
 export default KeyboardAvoidingViewDemo

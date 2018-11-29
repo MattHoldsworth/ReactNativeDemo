@@ -62,7 +62,7 @@ import ReactNativePickerDemo from './Screens/Components/ReactNativePickerDemo'
 import ReactNativeSettingsDemo from './Screens/Components/ReactNativeSettingsDemo'
 import ReactNativeWebviewDemo from './Screens/Components/ReactNativeWebviewDemo'
 import RefreshControlDemo from './Screens/Components/RefreshControlDemo'
-import SafeAreaViewDemo from './Screens/Components/SafeAreaViewDemo'
+import SafeAreaViewIOSDemo from './Screens/Components/SafeAreaViewIOSDemo'
 import ScrollViewDemo from './Screens/Components/ScrollViewDemo'
 import SectionListDemo from './Screens/Components/SectionListDemo'
 import SegmentedControlIOSDemo from './Screens/Components/SegmentedControlIOSDemo'
@@ -148,7 +148,7 @@ const MainNavigator = createStackNavigator({
   ReactNativeSettingsDemo,
   ReactNativeWebviewDemo,
   RefreshControlDemo,
-  SafeAreaViewDemo,
+  SafeAreaViewIOSDemo,
   ScrollViewDemo,
   SectionListDemo,
   SegmentedControlIOSDemo,
