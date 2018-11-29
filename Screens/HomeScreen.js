@@ -22,6 +22,7 @@ class HomeScreen extends React.Component {
             <View>
                 <FlatList
                     data={[  
+                        {key:'KeyboardAvoidingViewDemo'},
                         {key:'AccessibilityInfoDemo'},
                         {key:'ActionSheetIOSDemo'},
                         {key:'AlertDemo'},
@@ -65,7 +66,6 @@ class HomeScreen extends React.Component {
                         {key:'ImageBackgroundDemo'},
                         {key:'ImageDemo'},
                         {key:'InputAccessoryViewIOSDemo'},
-                        {key:'KeyboardAvoidingViewDemo'},
                         {key:'ListViewDemo'},
                         {key:'MaskedViewIOSDemo'},
                         {key:'ModalDemo'},
