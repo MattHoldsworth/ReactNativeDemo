@@ -16,6 +16,6 @@ PROJECT SETUP
 2. extract contents to desktop
 3. open powershell
 4. navigate to the project folder
-5. run the command 'npm install'
+5. run the command 'yarn'
 6. Open an android emulator from the command line or through android studio
 7. run the command 'react-native run-android' (project should open in the emulator automatically)
