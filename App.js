@@ -1,7 +1,7 @@
 //Class imports
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import HomeScreen from './Screens/HomeScreen'
-
+import { AppRegistry } from 'react-native';
 //API imports
 import AccessibilityInfoDemo from './Screens/APIs/AccessibilityInfoDemo'
 import ActionSheetIOSDemo from './Screens/APIs/ActionSheetIOSDemo'
@@ -88,6 +88,8 @@ import LayoutProps from './Screens/Props/LayoutProps'
 import ShadowProps from './Screens/Props/ShadowProps'
 import TextStyleProps from './Screens/Props/TextStyleProps'
 import ViewStyleProps from './Screens/Props/ViewStyleProps'
+
+AppRegistry.registerComponent('App', () => App)
 
 const MainNavigator = createStackNavigator({
   HomeScreen,
